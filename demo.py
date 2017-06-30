@@ -7,6 +7,6 @@ if __name__ == '__main__':
         math.factorial(50000)
         end = time.time()
 
-        print end - start
+        print "%.2f" % (end - start)
 
         time.sleep(1)
