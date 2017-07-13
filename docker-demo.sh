@@ -20,7 +20,7 @@ docker ps
 # Start shell session
 docker run -it --rm --net spark-net cloudsuite/spark bash
 # Run application
-/opt/spark-2.1.0/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark-master:7077 /opt/spark-2.1.0/examples/jars/spark-examples_2.11-2.1.0.jar 1000
+/opt/spark-2.1.0/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark-master:7077 /opt/spark-2.1.0/examples/jars/spark-examples_2.11-2.1.0.jar 300
 
 # Start worker 2
 docker run -it --cpus="1" -dP --net spark-net --name spark-worker-02 cloudsuite/spark worker spark://spark-master:7077
@@ -30,7 +30,7 @@ docker ps
 # Start shell session
 docker run -it --rm --net spark-net cloudsuite/spark bash
 # Run application
-/opt/spark-2.1.0/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark-master:7077 /opt/spark-2.1.0/examples/jars/spark-examples_2.11-2.1.0.jar 1000
+/opt/spark-2.1.0/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark-master:7077 /opt/spark-2.1.0/examples/jars/spark-examples_2.11-2.1.0.jar 300
 
 # Start worker 3
 docker run -it --cpus="1" -dP --net spark-net --name spark-worker-03 cloudsuite/spark worker spark://spark-master:7077
@@ -40,5 +40,5 @@ docker ps
 # Start shell session
 docker run -it --rm --net spark-net cloudsuite/spark bash
 # Run application
-/opt/spark-2.1.0/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark-master:7077 /opt/spark-2.1.0/examples/jars/spark-examples_2.11-2.1.0.jar 1000
+/opt/spark-2.1.0/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://spark-master:7077 /opt/spark-2.1.0/examples/jars/spark-examples_2.11-2.1.0.jar 300
 
