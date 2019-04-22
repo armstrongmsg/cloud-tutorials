@@ -1,1 +1,3 @@
-# vertical-scaling-demo
+# cloud-tutorials
+
+Tutorials on cloud computing technologies
